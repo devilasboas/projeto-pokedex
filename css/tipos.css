@@ -10,57 +10,184 @@
   --width-container: 1200px;
 }
 
-*{
-  border: 0;
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-  background-color: #4876FF;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #FFFAFA !important;
-}
-
-.menu {
-  list-style: none;
-  float: left;
-}
-
-.menu li {
-  position: relative;
-  float: left;
-}
-
-.menu li a {
-  color: #FFFAFA;
+a {
   text-decoration: none;
-  padding: 5px 10px;
-  display: block;
+  color: #5d5d5d;
 }
 
-.menu li a:hover {
-  background: #FFFF00;
-  color: #2F4F4F;
-  box-shadow: 0 3px 10px 0 #CCC;
-  text-shadow: 0px 0px 5px #fff;
+a:hover {
+  color: #6c63ff;
 }
 
-html{
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-  height: 100%;
+footer {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #f5f5f5;
+  background-color: #EF4036;
+  width: 1155px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body {
+  text-align: center;
+  background: white;
+  min-height: 100vh;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+.pokeball header .links {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Tipos Page */
+.tipospage header {
+  min-height: 80px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .tipospage header {
+    min-height: auto;
+    display: initial;
+  }
+}
+.tipospage header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .tipospage header .container .rodape{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.tipospage header .links {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .tipospage header .links {
+    text-align: center;
+    gap: 10px;
+  }
+}
+.tipospage header .links li {
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: .3s;
+}
+@media (max-width: 767px) {
+  .tipospage header .links li {
+    margin-left: auto;
+  }
+}
+.tipospage header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+.tipospage header .links li:not(:last-child):hover {
+  color: #6c63ff;
+}
+.tipospage .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 300px);
+}
+@media (max-width: 767px) {
+  .tipospage .content .container{
+    gap: 0;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .tipospage .content .info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+.tipospage .content .info h1 {
+  color: #5d5d5d;
+  font-size: 44px;
+}
+.tipospage .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 20px;
+  color: #5d5d5d;
+}
+.tipospage .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #c4c2e2;
+}
+.tipospage .content .image img {
+  float: left
 }
 
 .hero-section{
@@ -155,12 +282,19 @@ body{
 .card_conteudo {
   padding-top: 15px;
   color: white;
-  line-height: 23px;
+  line-height: 20px;
 }
 
-footer{
-  display: flex;
-  justify-content: center;
-  background-color: #4876FF;
-  padding: 30px;
-}
+  footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #f5f5f5;
+    background-color: #EF4036;
+    width: 1155px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
