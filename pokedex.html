@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon - Pokédex</title>
 
   <!-- Links -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+  <link rel="stylesheet" href="/css/pokedex.css">
   <link rel="icon" href="./favicons/favicon-16x16.png">
-  <link rel="stylesheet" href="./css/pokedex.css">
 
   <!-- Main JS -->
   <script defer src="./js/script.js"></script>
 
-  <title>Pokémon - Pokédex</title>
+  
 </head>
 <body>
+  <section>
   <header>
-    <div class="container">
-      <img src="images/logo.png" alt="Logo Pokemon">
-
-      <ul class="links">
-        <li>Home</li>
-        <li><a href="pokedex.html">Pokedex</a></li>
-        <li>Tipos</li>
-        <li>Onde Assistir</li>
-        <li>Cadastrar</li>
-      </ul>
-    </div>
+    <div class="pokedexpage">
+        <header>
+            <div class="container">
+                <img src="images/logo.png" alt="Logo Pokemon">
+                <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pokeball.html">Pokeball</a></li>
+                <li><a href="pokedex.html">Pokedex</a></li>
+                <li><a href="tipos.html"> Tipos </a></li>
+                <li>Cadastrar</li>
+                </ul>
+            </div>
   </header>
   <main>
     <img src="#" alt="pokemon" class="pokemon__image">
@@ -39,18 +46,21 @@
       <input
         type="search"
         class="input__search"
-        placeholder="Name or Number"
+        placeholder="Nome ou Número"
         required
       />
     </form>
 
     <div class="buttons">
-      <button class="button btn-prev">Prev &lt;</button>
-      <button class="button btn-next">Next &gt;</button>
+      <button class="button btn-prev">&lt; Anterior</button>
+      <button class="button btn-next">Próximo &gt;</button>
     </div>
 
     <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
   </main>
+  </section>
+  <br>
+  <br>
 
   <footer>Todos os direitos reservados.</footer>
 
