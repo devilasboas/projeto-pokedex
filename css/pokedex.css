@@ -49,6 +49,11 @@ main {
   position: relative;
 }
 
+.pokeball header .links {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   display: flex;
   align-items: center;
