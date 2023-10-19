@@ -29,8 +29,8 @@ ul {
   margin-right: auto;
 }
 
-/* Small */
-@media (min-width: 768px) {
+/*Formatação */
+@media (min-width: 768px) {/* Small */
   .container {
     width: 750px;
   }
@@ -148,7 +148,7 @@ ul {
   height: 500px;
 }
 
-/* Formatação Footer */
+/* Início da formatação Footer */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
@@ -166,10 +166,6 @@ ul {
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1px;
-}
-
-main {
-    height: 80vh;
 }
 
 footer {
@@ -306,3 +302,4 @@ footer {
         padding: 3rem 2rem;
     }
 }
+/* Fim da formatação footer*/
