@@ -1,0 +1,147 @@
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-form {
+  background-color: hsl(234, 64%, 91%);
+  max-width: 745px;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin: 4rem auto;
+}
+
+.mobile-img{
+  display: none;
+}
+
+.form-column{
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  padding: 3%;
+  line-height: 2;
+  position: relative;
+  padding-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  margin-top: 0;
+}
+
+p {
+  color: hsl(234, 29%, 20%);
+  font-size: 16px;
+}
+
+.features img {
+  width: 1.1rem;
+}
+
+label {
+  font-weight: 700;
+}
+
+input[type="email"] {
+  width: 90%;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+
+input:active{
+  cursor: pointer;
+}
+
+input[type="email"],
+form button, .container-success-confirmation button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.error{
+  display: inline-block;
+  text-align: right;
+  width: 65%;
+  color: red;
+  font-size: .9rem;
+  visibility: hidden;
+}
+
+form button, .container-success-confirmation button{
+  width: 99%;
+  border: none;
+  margin-top: 1rem;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  font-weight: 700;
+}
+
+.form button:hover, .container-success-confirmation button:hover{
+  cursor: pointer;
+}
+
+form button:active, .container-success-confirmation button:hover{
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  color: white;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+  width: 100%;
+}
+
+.container-success-confirmation{
+  display: none;
+  max-width: 435PX;
+  padding: 4rem;
+}
+
+.success-icon{
+  margin-bottom: 2rem;
+}
+
+.container-success-confirmation p{
+  line-height: 1.5rem;
+}
+
+.email-input{
+  font-weight: 700;
+}
+
+.attribution {
+  color: white;
+}
+
+
+@media screen and (max-width: 375px) {
+  body{
+    background-color: white;
+    margin-top: 0;
+  }
+
+  .container-form{
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .mobile-img{
+    display: block;
+  }
+
+  .image{
+    display: none;
+  }
+
+  .container-success-confirmation{
+    padding: 4rem;
+  }
+
+  .attribution{
+    color: hsl(234, 29%, 20%);
+  }
+}

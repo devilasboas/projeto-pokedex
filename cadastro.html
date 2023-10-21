@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="css/cadastro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <title>
+    Pokémon - Cadastro
+  </title>
+</head>
+
+<body>
+  <section>
+    <div class="container-form">
+      <div class="mobile-img">
+        <img src="images/pokemon-1185500.png" alt="sign-up" />
+      </div>
+      <div class="form-column">
+        <div class="form">
+          <h1>Cadastre-se</h1>
+          <p>Junte-se a mais de 60.000 fãs de Pokemon que recebem atualizações mensais sobre:</p>
+          <div class="features">
+            <p>
+              <img src="images/icon-list.svg" alt="check-list" /> Tipos de Pokémon
+            </p>
+            <p>
+              <img src="images/icon-list.svg" alt="check-list" />
+              Informações e curiosidades
+            </p>
+            <p>
+              <img src="images/icon-list.svg" alt="check-list" /> E muito mais!
+            </p>
+          </div>
+
+          <form action="#" method="post">
+            <label for="email">Seu e-mail</label>
+            <div class="error">e-mail inválido</div>
+            <br />
+            <input type="email" name="email" id="email" placeholder="usuario@email.com" required />
+
+            <button type="submit" onclick="validateEmail(event)">
+              Cadastrar meu e-mail
+            </button>
+          </form>
+        </div>
+        <div class="image">
+          <img src="images/pngwing.com.png" alt="sign up illustration" />
+        </div>
+      </div>
+    </div>
+    <div class="container-success-confirmation container-form">
+      <img src="images/icon-success.svg" alt="check image" class="success-icon" />
+      <br />
+      <h1>Agradecemos por se inscrever.</h1>
+      <p>
+        Um email de confirmação foi enviado para
+        <span class="email-input"></span>. Por favor, abra-o e acesse o link para confirmar sua assinatura.
+      </p>
+      <br />
+      <button onclick="dismissMessage()">Fechar mensagem</button>
+    </div>
+  </section>
+
+
+  <script src="js/cadastro.js"></script>
+</body>
+
+</html>
