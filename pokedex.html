@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokémon - Pokédex</title>
 
-  <!-- Links -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/pokedex.css">
   <link rel="icon" href="assets/favicons/favicon-16x16.png">
 
@@ -23,16 +24,40 @@
     <section>
         <div class="pokedexpage">
     <header>
-          <div class="container">
-            <img src="assets/images/logo.png" alt="Logo Pokemon">
-              <ul class="links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="pokeball.html">Pokeball</a></li>
-              <li><a href="pokedex.html">Pokédex</a></li>
-              <li><a href="tipos.html"> Tipos </a></li>
-              <li>Cadastrar</li>
-              </ul>
-          </div>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img width="60%" src="assets/images/logo.png" alt="Logo Pokemon">
+        </div>
+        <div class="nav-list">
+          <ul class="links">
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="pokeball.html" class="nav-link">Pokeball</a></li>
+            <li class="nav-item"><a href="pokedex.html" class="nav-link">Pokédex</a></li>
+            <li class="nav-item"><a href="tipos.html" class="nav-link"> Tipos </a></li>
+          </ul>
+        </div>
+
+        <div class="login-button">
+          <button><a href="cadastro.html">Cadastrar</a></button>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" width="30px" src="assets/images/menu-svgrepo-com.svg"
+              alt=""></button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="pokeball.html" class="nav-link">Pokeball</a></li>
+          <li class="nav-item"><a href="pokedex.html" class="nav-link">Pokédex</a></li>
+          <li class="nav-item"><a href="tipos.html" class="nav-link"> Tipos </a></li>
+        </ul>
+
+        <div class="login-button">
+          <button><a href="cadastro.html">Cadastrar</a></button>
+        </div>
+      </div>
     </header>
   
   <main>
@@ -63,7 +88,79 @@
   <br>
   <br>
 
-  <footer>Todos os direitos reservados.</footer>
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img width="250px" src="assets/images/logo-coder-house.png" alt="logo coderhouse">
+
+        <div id="footer_social_media">
+          <a href="https://www.instagram.com/coderhousebrasil/" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/Coderhouse.br/" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCA-85r1mD_D0lsKqCsqWWzw" class="footer-link" id="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Cursos</h3>
+        </li>
+        <li>
+          <a href="https://www.coderhouse.com.br/categorias/diseno-ux-ui" class="footer-link">Design UX/UI</a>
+        </li>
+        <li>
+          <a href="https://www.coderhouse.com.br/categorias/programacion" class="footer-link">Programação</a>
+        </li>
+        <li>
+          <a href="https://www.coderhouse.com.br/categorias/data" class="footer-link">Data</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Saiba mais</h3>
+        </li>
+        <li>
+          <a href="https://canaltech.com.br/games/pokemon-as-curiosidades-mais-insanas-da-franquia-221164/" class="footer-link">Curiosidades</a>
+        </li>
+        <li>
+          <a href="https://pokemongolive.com/?hl=pt_BR" class="footer-link">Pokémon GO</a>
+        </li>
+        <li>
+          <a href="https://www.legiaodosherois.com.br/2021/pokemon-onde-assistir-cada-temporada.html" class="footer-link">Onde assistir</a>
+        </li>
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3>Cadastre-se</h3>
+
+        <p>
+          Digite seu e-mail para ser notificado sobre
+          as maiores novidades
+        </p>
+
+        <div id="input_group">
+          <input type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer_copyright">
+      &#169
+      2023 all rights reserved
+    </div>
+  </footer>
+  <script src="assets/js/menu.js"></script>
 
 </body>
 </html>
