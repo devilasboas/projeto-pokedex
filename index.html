@@ -12,7 +12,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="icon" href="assets/favicons/favicon-16x16.png">
 
@@ -23,15 +23,39 @@
   <section>
     <div class="landing-page">
       <header>
-        <div class="container">
-          <img width="10%"   src="assets/images/logo.png" alt="Logo Pokemon">
-          <ul class="links">
-            <li>Home</li>
-            <li><a href="pokeball.html">Pokeball</a></li>
-            <li><a href="pokedex.html">Pokédex</a></li>
-            <li><a href="tipos.html"> Tipos </a></li>
-            <li><a href="cadastro.html"> Cadastrar </a></li>
+        <nav class="nav-bar">
+          <div class="logo">
+            <img width="60%" src="assets/images/logo.png" alt="Logo Pokemon">
+          </div>
+          <div class="nav-list">
+            <ul class="links">
+              <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="pokeball.html" class="nav-link">Pokeball</a></li>
+              <li class="nav-item"><a href="pokedex.html" class="nav-link">Pokédex</a></li>
+              <li class="nav-item"><a href="tipos.html" class="nav-link"> Tipos </a></li>
+            </ul>
+          </div>
+
+          <div class="login-button">
+            <button><a href="cadastro.html">Cadastrar</a></button>
+          </div>
+
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" width="30px" src="assets/images/menu-svgrepo-com.svg"
+                alt=""></button>
+          </div>
+        </nav>
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="pokeball.html" class="nav-link">Pokeball</a></li>
+            <li class="nav-item"><a href="pokedex.html" class="nav-link">Pokédex</a></li>
+            <li class="nav-item"><a href="tipos.html" class="nav-link"> Tipos </a></li>
           </ul>
+
+          <div class="login-button">
+            <button><a href="cadastro.html">Cadastrar</a></button>
+          </div>
         </div>
       </header>
 
@@ -125,7 +149,7 @@
       2023 all rights reserved
     </div>
   </footer>
-
+  <script src="assets/js/menu.js"></script>
 </body>
 
 </html>

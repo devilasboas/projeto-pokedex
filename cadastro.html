@@ -16,10 +16,46 @@
 </head>
 
 <body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img width="60%" src="assets/images/logo.png" alt="Logo Pokemon">
+      </div>
+      <div class="nav-list">
+        <ul class="links">
+          <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="pokeball.html" class="nav-link">Pokeball</a></li>
+          <li class="nav-item"><a href="pokedex.html" class="nav-link">Pokédex</a></li>
+          <li class="nav-item"><a href="tipos.html" class="nav-link"> Tipos </a></li>
+        </ul>
+      </div>
+
+      <div class="login-button">
+        <button><a href="cadastro.html">Cadastrar</a></button>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" width="30px" src="assets/images/menu-svgrepo-com.svg"
+            alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="pokeball.html" class="nav-link">Pokeball</a></li>
+        <li class="nav-item"><a href="pokedex.html" class="nav-link">Pokédex</a></li>
+        <li class="nav-item"><a href="tipos.html" class="nav-link"> Tipos </a></li>
+      </ul>
+
+      <div class="login-button">
+        <button><a href="cadastro.html">Cadastrar</a></button>
+      </div>
+    </div>
+  </header>
   <section>
     <div class="container-form">
       <div class="mobile-img">
-        <img src="assets/images/pokemon-1185500.png" alt="sign-up" />
+        <img width="300px"  src="assets/images/pokemon-1185500.png" alt="sign-up" />
       </div>
       <div class="form-column">
         <div class="form">
@@ -69,6 +105,7 @@
 
 
   <script src="assets/js/cadastro.js"></script>
+  <script src="assets/js/menu.js"></script>
 </body>
 
 </html>
