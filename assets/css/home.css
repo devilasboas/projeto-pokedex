@@ -7,6 +7,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #292727;
+}
 /* início formatação menu*/
 a:hover {
   color: #6c63ff;
@@ -40,7 +44,7 @@ a:hover {
 .nav-link {
   text-decoration: none;
   font-size: 1.15rem;
-  color: #444242;
+  color: #1d1b1b;
   font-weight: 400;
 }
 
@@ -162,7 +166,7 @@ a:hover {
   margin: 0;
   line-height: 1.6;
   font-size: 20px;
-  color: #5d5d5d;
+  color: #1d1b1b;
 }
 .landing-page .content .info button {
   border: 0;
@@ -171,7 +175,7 @@ a:hover {
   margin-top: 30px;
   cursor: pointer;
   color: #FFF;
-  background-color: #c4c2e2;
+  background-color: #6c63ff;
 }
 .landing-page .content .image img {
   max-width: 100%;

@@ -197,14 +197,14 @@ a:hover {
     }
   }
   .pokeball .content .info h1 {
-    color: #5d5d5d;
+    color: #1d1b1b;
     font-size: 44px;
   }
   .pokeball .content .info p {
     margin: 0;
     line-height: 1.6;
     font-size: 20px;
-    color: #5d5d5d;
+    color: #1d1b1b;
   }
   .pokeball .content .info button {
     border: 0;
