@@ -169,13 +169,14 @@ a:hover {
   color: #1d1b1b;
 }
 .landing-page .content .info button {
-  border: 0;
+  border: 1;
+  border-color: #6c63ff;
   border-radius: 20px;
   padding: 12px 30px;
   margin-top: 30px;
   cursor: pointer;
   color: #FFF;
-  background-color: #6c63ff;
+  background-color: #FFFFFF;
 }
 .landing-page .content .image img {
   max-width: 100%;

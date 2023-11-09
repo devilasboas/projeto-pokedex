@@ -105,17 +105,18 @@ a:hover {
 } /* fim formatação menu*/
 
 body {
-  text-align: center;
   background: white;
   min-height: 100vh;
 }
 
 main {
   display: inline-block;
-  margin-top: 2%;
+  margin-left: 2%;
   padding: 15px;
   position: relative;
 }
+
+
 
 
 .container {
